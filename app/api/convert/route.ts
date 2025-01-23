@@ -4,8 +4,8 @@ export async function POST(req: NextRequest) {
   // Forward the request to the FastAPI backend
   const backendUrl =
     process.env.NODE_ENV === "development"
-      ? process.env.BACKEND_URL || "http://127.0.0.1:8000/convert"
-      : "/api/convert";
+      ? "http://127.0.0.1:8000/convert"
+      : "/api/py/convert";
 
   try {
     const response = await fetch(backendUrl, {
