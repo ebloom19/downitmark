@@ -5,7 +5,7 @@ export async function POST(req: NextRequest) {
   const backendUrl =
     process.env.NODE_ENV === "development"
       ? "http://127.0.0.1:8000/convert"
-      : "/api/py/convert";
+      : `${req.nextUrl.origin}/api/py/convert`;
 
   try {
     const response = await fetch(backendUrl, {
