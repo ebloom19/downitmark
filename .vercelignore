@@ -1,6 +1,10 @@
-tests/
-docs/
+# Exclude Python virtual environment
+venv/
+.env.local
+
+# Exclude Git files
 .git/
-*.pyc
-__pycache__/
+.gitignore
+
+# Exclude node_modules (if necessary)
 node_modules/
