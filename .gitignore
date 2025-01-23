@@ -27,6 +27,11 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# Local files
+*.local
+.DS_Store
+temp_*  # Temporary files from markitdown
+
 # vercel
 .vercel
 
@@ -36,4 +41,7 @@ next-env.d.ts
 
 # python
 __pycache__/
-venv
+*.pyc
+venv/
+env/
+*.env
