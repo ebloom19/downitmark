@@ -8,3 +8,7 @@ venv/
 
 # Exclude node_modules (if necessary)
 node_modules/
+
+# Don't exclude pyproject.toml and the api directory
+!pyproject.toml
+!api/

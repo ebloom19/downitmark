@@ -9,4 +9,8 @@ dependencies = [
     "fastapi==0.115.0",
     "uvicorn[standard]==0.30.6",
     "markitdown @ git+https://github.com/microsoft/markitdown"
-] 
+]
+
+[tool.setuptools]
+packages = ["api"]
+py-modules = [] 
